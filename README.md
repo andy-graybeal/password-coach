@@ -18,9 +18,10 @@ The EFF has come up with a novel way to produce a secure passphrase.  It require
 My tool uses python to virtualize the dice and automates the word list reference.
 
 ## About the data
-The data originates 
+The project uses the EFF's Diceware-style word list.  Each entry pairs a five-digit dice result with a word.
 
-
+## How to Run
+First download the .py file and the word list into the same folder. Head on over to that folder and when inside run the program with this magical command: `python password-helper.py`
 
 
 

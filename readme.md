@@ -34,12 +34,10 @@ This tool will:
   python app.py
     - insert a sample of running the program and it's output
 
-
   Make sure the the word lists are in the same directory as the python script.
 
 
-https://blog.codinghorror.com/password-rules-are-bullshit/
-https://github.com/danielmiessler/SecLists/tree/master/Passwords
+
 
 ## Testing
 | What you typed | Expected result | Actual result | Pass or fail |

@@ -34,5 +34,21 @@ This tool will:
   python app.py
     - insert a sample of running the program and it's output
 
-
   Make sure the the word lists are in the same directory as the python script.
+
+
+
+
+## Testing
+| What you typed | Expected result | Actual result | Pass or fail |
+|---|---|---|---|
+| Menu `1`; password `CorrectHorseBatteryStaple` | Passes all three password checks. | Passes all three checks | Passed |
+| Menu `1`; password `shortpassword` | Reports fewer than 15 characters. | Fewer than 15 | Passes |
+| Menu `1`; password `123456` | Reports fewer than 15 characters and a match in the common-password list. | Reports fewer than 15 characters and a match in the common-password list.| Passed |
+| Menu `1`; password `abcdefghijklmaaa` | Reports three identical characters in a row. | eports three identical characters in a row. | Passed |
+| Menu `1`; password `aaa` | Reports fewer than 15 characters and three identical characters in a row. | Reports fewer than 15 characters and three identical characters in a row. | Passes |
+| Menu `1`; password `PASSWORD` | Reports fewer than 15 characters. |Reports fewer than 15 characters.  | Passed |
+| Menu `1`; password `  CorrectHorseBatteryStaple  ` | Passes all three checks. | Passes all three checks. | Passed |
+| Menu `1`; password `ThisOneIsNotInTheList` | Passes all three checks; no match in the common-password list. | Passes all three checks; no match in the common-password list| Passed1|
+| Menu `1`; blank password (press Enter) | Reports fewer than 15 characters. | Reports fewer than 15 characters. | Passed |
+| Menu `4` | Prints “Goodbye!” and exits. | It does print Goodbye! and quits | Passed |
